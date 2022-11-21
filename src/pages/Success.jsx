@@ -21,27 +21,27 @@ function Success() {
         </div>
       ))} */}
       <div>
-      <Link to="AirPods"> {productsArray && <p> {(productsArray[0].title)}</p>}
+      <Link to="AirPods">   {(productsArray[0].title)}
         <img width="90" src={img2} />
-        {productsArray && <p>ürün fiyatı: {(productsArray[0].price)}</p>}</Link>
+        {productsArray && <p>price:{(productsArray[0].price)}$</p>}</Link>
       </div>
 
       <div>
       <Link to="Ipad"> {productsArray && <p> {(productsArray[1].title)}</p>}
         <img width="90" src={img3} />
-        {productsArray && <p>ürün fiyatı: {(productsArray[1].price)}</p>}</Link>
+        {productsArray && <p>price: {(productsArray[1].price)}$</p>}</Link>
       </div>
 
       <div>
       <Link to="Iphone"> {productsArray && <p> {(productsArray[2].title)}</p>}
         <img width="90" src={img4} />
-        {productsArray && <p>ürün fiyatı: {(productsArray[2].price)}</p>}</Link>
+        {productsArray && <p>price:{(productsArray[2].price)}$</p>}</Link>
       </div>
       
       <div>
       <Link to="MacBook"> {productsArray && <p> {(productsArray[3].title)}</p>}
         <img width="90" src={img1} />
-        {productsArray && <p>ürün fiyatı: {(productsArray[3].price)}</p>}</Link>
+        {productsArray && <p>price: {(productsArray[3].price)}$</p>}</Link>
       </div>
     </div>
 
