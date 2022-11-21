@@ -1,0 +1,17 @@
+  .navbar {
+      background-color: antiquewhite;
+ display:flex;
+ padding: 10px;
+  }
+
+  .pages {
+   display: flex;
+   height: 30px;
+
+  }
+
+  .basket {
+      background-color:rgb(192, 205, 205);
+    display: flex;
+    justify-content: flex-end;
+  }
