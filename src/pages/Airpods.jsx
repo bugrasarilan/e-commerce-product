@@ -5,6 +5,7 @@ import { CartContext } from '../CartContext';
 import { useContext } from 'react';
 import ProductCard from '../components/ProductCard';
 import { Link } from 'react-router-dom';
+import "./productpages.css"
 
 function Airpods() {
     console.log(productsArray)
@@ -16,25 +17,26 @@ function Airpods() {
     return (
         <div>
           <button> <Link to="/">back to page  </Link></button> 
-            <h1> AirPods sayfası!</h1>
+            <h1> AirPods </h1>
 
 
-            <div className='pagesview'>
-                <div> <img width="90" src={img2} />
-                    {(productsArray[0].title)}
-                    {/* {productsArray[0].title} */}
-                    {productsArray && <p>price: {(productsArray[0].price)}$</p>}
-                    {/* {productsArray[0].title ((product, idx) => ( */}
-                </div>  
-                 </div>
+           
+      <div className='pagesview'>
+        <img className='productpagesimage' src={img2} alt="Macbook" />
+        <div className='productinfo'>
+          {productsArray[0].title}
+          {productsArray && <p>price:{(productsArray[0].price)}$</p>}
+          <div className='pagebutton'>
+            <button onClick={() => cart.addOneToCart(productsArray[0].id)} >+</button>
+            <button onClick={() => cart.removeOneFromCart(productsArray[0].id)} >-</button>
+            <button onClick={() => cart.deleteFromCart(productsArray[0].id)}>Remove from cart</button>
+            <button onClick={() => cart.addOneToCart(productsArray[0].id)}>Add To Cart</button>
+          </div>
+        </div>
+      </div>
 
-            <div className='pagebutton'>
-
-                <button onClick={() => cart.addOneToCart(productsArray[0].id)} >+</button>
-                <button onClick={() => cart.removeOneFromCart(productsArray[0].id)} >-</button>
-                <button onClick={() => cart.deleteFromCart(productsArray[0].id)}>Remove from cart</button>
-                <button onClick={() => cart.addOneToCart(productsArray[0].id)}>Add To Cart</button>
-            </div>
+       
+            
 
 
 

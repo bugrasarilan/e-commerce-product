@@ -1,0 +1,26 @@
+/* .store {
+    width: 650px;
+    margin: 10px auto;
+    padding-top: 10px;
+    padding-right:50px;
+    background-color: rgb(191, 231, 248);
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px, 150px;
+    gap: 200px;
+    justify-content: center;
+  } */
+
+.productcardinfo{
+    width: 240px;
+    display: flex;
+    justify-content: center;
+
+}
+.productcardimage{
+    width: 240px;
+    height: 240px;
+  
+
+}

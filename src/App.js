@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComponent from './components/Navbar';
 import {Routes, Route } from "react-router-dom";
 import Pay from './pages/Pay';
-
 import Success from './pages/Success';
 import Airpods from './pages/Airpods';
 import Ipad from './pages/Ipad';

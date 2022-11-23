@@ -20,16 +20,16 @@ function NavbarComponent() {
         <>
             <header className='navbar' >
                  <Link to="/">  <h1 className='header'>Ecommerce Store</h1></Link>
-                <div className='pages' >
+                <div className='linkbutton' >
                    
-                    <button><Link to="/">Home </Link></button>
-                    <button> <Link to="Airpods">Airpods </Link></button>
-                    <button>  <Link to="Ipad">Ipad </Link></button>
-                    <button>  <Link to="Iphone">Iphone </Link></button>
-                    <button> <Link to="Macbook">Macbook </Link></button>
+                    <button className='button' ><Link className='button' to="/">Home </Link></button>
+                    <button className='button' > <Link className='button' to="Airpods">Airpods </Link></button>
+                    <button className='button'>  <Link className='button' to="Ipad">Ipad </Link></button>
+                    <button className='button'>  <Link className='button' to="Iphone">Iphone </Link></button>
+                    <button  className='button'> <Link className='button' to="Macbook">Macbook </Link></button>
  
                 </div>
-                <button className='basket' onClick={handleShow}>Cart ({productsCount} Items)</button>
+                <button className='basket' onClick={handleShow}> {productsCount} product</button>
             </header>
 
             <Modal show={show} onHide={handleClose}>

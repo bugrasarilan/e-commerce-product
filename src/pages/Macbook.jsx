@@ -13,22 +13,53 @@ function Macbook() {
 
   return (
     <div>
-<button><Link to="/"> back to page  </Link> </button>
-      <h1> Macbook sayfası!</h1>
-      {productsArray && <p> {(productsArray[3].title)}</p>}
-      <img width="90" src={img1} alt="Macbook" />
-      {productsArray[3].title}
-      {productsArray && <p>price:{(productsArray[3].price)}$</p>}
 
-      <div>
+      <button><Link to="/"> back to page  </Link> </button>
+      <h1> Macbook </h1>
 
-        <button onClick={() => cart.addOneToCart(productsArray[3].id)} >+</button>
-        <button onClick={() => cart.removeOneFromCart(productsArray[3].id)} >-</button>
-        <button onClick={() => cart.deleteFromCart(productsArray[3].id)}>Remove from cart</button>
-        <button onClick={() => cart.addOneToCart(productsArray[3].id)}>Add To Cart</button>
+
+
+
+      <div className='pagesview'>
+        <img className='productpagesimage' src={img1} alt="Macbook" />
+        <div className='productinfo'>
+          {productsArray[3].title}
+          {productsArray && <p>price:{(productsArray[3].price)}$</p>}
+          <div className='pagebutton'>
+            <button onClick={() => cart.addOneToCart(productsArray[3].id)} >+</button>
+            <button onClick={() => cart.removeOneFromCart(productsArray[3].id)} >-</button>
+            <button onClick={() => cart.deleteFromCart(productsArray[3].id)}>Remove from cart</button>
+            <button onClick={() => cart.addOneToCart(productsArray[3].id)}>Add To Cart</button>
+          </div>
+        </div>
       </div>
 
-      <h1 >Welcome to the store!</h1>
+
+
+
+      {/* {productQuantity > 0 ? 
+             
+             <div>
+      {productsArray[2].count =undefined ? productsArray[2].count  :   cart.items[0].quantity}  
+
+                {productsArray[2].count = undefined ? productsArray[2].count : cart.items[0].quantity}
+                <button onClick={() => cart.addOneToCart(productsArray[2].id)} >+ </button>
+                <button onClick={() => cart.removeOneFromCart(productsArray[2].id)} >-</button>
+                <button onClick={() => cart.deleteFromCart(productsArray[2].id)}>Delete product </button>
+              </div>
+              :
+
+              <button onClick={() => cart.addOneToCart(productsArray[2].id)}>Add To Cart</button>
+
+              }   */}
+
+
+
+
+
+
+
+      <h1 >other product</h1>
       <div className='store'>
         {productsArray.map((product, idx) => (
           <ProductCard product={product} />

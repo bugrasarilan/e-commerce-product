@@ -12,7 +12,7 @@ function Success() {
     <div className='store'>
       {/* ilk sayfa */}
 
-{/* 
+      {/* 
       {productsArray.map((product, idx) => (
         <div key={idx}>
           <Link to="store">  {product.title}<br /> </Link>
@@ -21,27 +21,31 @@ function Success() {
         </div>
       ))} */}
       <div>
-      <Link to="AirPods">   {(productsArray[0].title)}
-        <img width="90" src={img2} />
-        {productsArray && <p>price:{(productsArray[0].price)}$</p>}</Link>
+        <Link to="AirPods">
+          {(productsArray[0].title)}
+          <img className='homeimage' width="200" height="150" src={img2} />
+          {<p>price:{(productsArray[0].price)}$</p>}</Link>
       </div>
 
       <div>
-      <Link to="Ipad"> {productsArray && <p> {(productsArray[1].title)}</p>}
-        <img width="90" src={img3} />
-        {productsArray && <p>price: {(productsArray[1].price)}$</p>}</Link>
+        <Link to="Ipad">
+          {(productsArray[1].title)}
+          <img className='homeimage' width="200" height="150" src={img3} />
+          {<p>price: {(productsArray[1].price)}$</p>}</Link>
       </div>
 
       <div>
-      <Link to="Iphone"> {productsArray && <p> {(productsArray[2].title)}</p>}
-        <img width="90" src={img4} />
-        {productsArray && <p>price:{(productsArray[2].price)}$</p>}</Link>
+        <Link to="Iphone">
+          {(productsArray[2].title)}
+          <img className='homeimage' width="200" height="150" src={img4} />
+          {<p>price:{(productsArray[2].price)}$</p>}</Link>
       </div>
-      
+
       <div>
-      <Link to="MacBook"> {productsArray && <p> {(productsArray[3].title)}</p>}
-        <img width="90" src={img1} />
-        {productsArray && <p>price: {(productsArray[3].price)}$</p>}</Link>
+        <Link to="MacBook">
+          {(productsArray[3].title)}
+          <img className='homeimage' width="200" height="150" src={img1} />
+          {<p>price: {(productsArray[3].price)}$</p>}</Link>
       </div>
     </div>
 
