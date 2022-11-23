@@ -50,5 +50,10 @@ height: 300px;
         width: 205px;
         height: 205px;
         float: left;
+
+    }
+    .productcardimage{
+        width: 100px;
+        height: 100px;
     }
   }

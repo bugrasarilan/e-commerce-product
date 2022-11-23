@@ -2,7 +2,7 @@
     width: 650px;
     margin: 10px auto;
     padding-top: 10px;
-    padding-right:50px;
+    padding-right:10px;
     background-color: rgb(191, 231, 248);
     border-radius: 30px;
     display: grid;
@@ -15,7 +15,7 @@
 .productcardinfo{
     width: 240px;
     display: flex;
-    justify-content: center;
+
 
 }
 .productcardimage{
