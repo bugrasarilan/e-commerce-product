@@ -56,7 +56,7 @@ width: 300px;
 
 @media only screen and (max-width: 568px) {
     .pagesview {
-        background-color: blanchedalmond;
+    
         display: flex;
         height: 205px;
        
