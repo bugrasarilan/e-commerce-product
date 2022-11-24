@@ -27,8 +27,8 @@ function Macbook() {
           <div className='pagebutton'>
             <button className='buttoncount' onClick={() => cart.addOneToCart(productsArray[3].id)} >+</button>
             <button className='buttoncount' onClick={() => cart.removeOneFromCart(productsArray[3].id)} >-</button>
-            <button className='buttonadd' onClick={() => cart.addOneToCart(productsArray[3].id)}>Add To Cart</button>
-            <button className='buttondelet' onClick={() => cart.deleteFromCart(productsArray[3].id)}>Remove from cart</button>
+            <button className='buttonadd' onClick={() => cart.addOneToCart(productsArray[3].id)}>Add</button>
+            <button className='buttondelet' onClick={() => cart.deleteFromCart(productsArray[3].id)}>Delete</button>
 
           </div>
         </div>
