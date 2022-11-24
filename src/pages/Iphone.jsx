@@ -17,7 +17,7 @@ function Iphone(props) {
 
   return (
     <div>
-      <button> <Link to="/">back to page  </Link></button>
+     <Link to="/"><button className='buttoncount' >Back to page </button></Link> 
       <h1> Iphone </h1>
 
 
@@ -28,10 +28,10 @@ function Iphone(props) {
           {productsArray[2].title}
           {productsArray && <p>price:{(productsArray[2].price)}$</p>}
           <div className='pagebutton'>
-            <button onClick={() => cart.addOneToCart(productsArray[2].id)} >+</button>
-            <button onClick={() => cart.removeOneFromCart(productsArray[2].id)} >-</button>
-            <button onClick={() => cart.deleteFromCart(productsArray[2].id)}>Remove from cart</button>
-            <button onClick={() => cart.addOneToCart(productsArray[2].id)}>Add To Cart</button>
+            <button className='buttoncount' onClick={() => cart.addOneToCart(productsArray[2].id)} >+</button>
+            <button className='buttoncount' onClick={() => cart.removeOneFromCart(productsArray[2].id)} >-</button>
+            <button className='buttondelet' onClick={() => cart.deleteFromCart(productsArray[2].id)}>delete</button>
+            <button className='buttonadd' onClick={() => cart.addOneToCart(productsArray[2].id)}>Add</button>
           </div>
         </div>
       </div>

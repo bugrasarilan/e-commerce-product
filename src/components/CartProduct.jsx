@@ -15,10 +15,12 @@ function CartProduct(props) {
             <img width="100" src={productData.img} alt="image" />
             <p> piece:{quantity}</p>
             <p>${(quantity * productData.price).toFixed(2)}</p>
-            <button onClick={() => cart.deleteFromCart(id)}>Remove</button>
-            {quantity}
-            <button onClick={() => cart.addOneToCart(id)} >+</button>
-            <button onClick={() => cart.removeOneFromCart(id)} >-</button>
+            <button className='buttoncount' onClick={() => cart.addOneToCart(id)} >+</button>
+            <button className='buttoncount' onClick={() => cart.removeOneFromCart(id)} >-</button>
+              {quantity}
+            <button className='buttondelet' onClick={() => cart.deleteFromCart(id)}>delete</button>
+         
+
             <hr></hr>
         </>
     )

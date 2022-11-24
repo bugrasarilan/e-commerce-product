@@ -14,8 +14,7 @@ function Macbook() {
   return (
     <div>
 
-      <button><Link to="/"> back to page  </Link> </button>
-      <h1> Macbook </h1>
+<Link to="/"><button className='buttoncount' >Back to page </button></Link>       <h1> Macbook </h1>
 
 
 
@@ -26,10 +25,10 @@ function Macbook() {
           {productsArray[3].title}
           {productsArray && <p>price:{(productsArray[3].price)}$</p>}
           <div className='pagebutton'>
-            <button onClick={() => cart.addOneToCart(productsArray[3].id)} >+</button>
-            <button onClick={() => cart.removeOneFromCart(productsArray[3].id)} >-</button>
-            <button onClick={() => cart.deleteFromCart(productsArray[3].id)}>Remove from cart</button>
-            <button onClick={() => cart.addOneToCart(productsArray[3].id)}>Add To Cart</button>
+            <button className='buttoncount' onClick={() => cart.addOneToCart(productsArray[3].id)} >+</button>
+            <button className='buttoncount' onClick={() => cart.removeOneFromCart(productsArray[3].id)} >-</button>
+            <button className='buttondelet' onClick={() => cart.deleteFromCart(productsArray[3].id)}>Remove from cart</button>
+            <button className='buttonadd' onClick={() => cart.addOneToCart(productsArray[3].id)}>Add To Cart</button>
           </div>
         </div>
       </div>

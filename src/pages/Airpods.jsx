@@ -16,7 +16,7 @@ function Airpods() {
     console.log("cart.items", cart.items);
     return (
         <div>
-          <button> <Link to="/">back to page  </Link></button> 
+              <Link to="/"><button className='buttoncount' >Back to page </button></Link> 
             <h1> AirPods </h1>
 
 
@@ -27,10 +27,10 @@ function Airpods() {
           {productsArray[0].title}
           {productsArray && <p>price:{(productsArray[0].price)}$</p>}
           <div className='pagebutton'>
-            <button onClick={() => cart.addOneToCart(productsArray[0].id)} >+</button>
-            <button onClick={() => cart.removeOneFromCart(productsArray[0].id)} >-</button>
-            <button onClick={() => cart.deleteFromCart(productsArray[0].id)}>Remove from cart</button>
-            <button onClick={() => cart.addOneToCart(productsArray[0].id)}>Add To Cart</button>
+            <button className='buttoncount'  onClick={() => cart.addOneToCart(productsArray[0].id)} >+</button>
+            <button className='buttoncount'  onClick={() => cart.removeOneFromCart(productsArray[0].id)} >-</button>
+            <button className='buttondelet'  onClick={() => cart.deleteFromCart(productsArray[0].id)}>Remove from cart</button>
+            <button className='buttonadd'  onClick={() => cart.addOneToCart(productsArray[0].id)}>Add To Cart</button>
           </div>
         </div>
       </div>

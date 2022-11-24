@@ -28,6 +28,29 @@ height: 300px;
     height: 375px;
     float: left;
 }
+.buttondelet {
+    border-radius: 20px;
+    background-color: rgb(237, 174, 174);
+}
+.buttondelet:hover {
+    background-color: rgb(226, 109, 109);
+}
+.buttoncount{
+    border-radius: 15px;
+    background-color: rgb(181, 203, 225);
+    text-decoration: none;
+}
+.buttoncount:hover{
+    background-color:white;
+}
+.buttonadd{
+    border-radius: 20px;
+    background-color: rgb(202, 240, 148);
+}
+.buttonadd:hover{
+    border-radius: 20px;
+    background-color: rgb(229, 239, 216);
+}
 
 @media only screen and (max-width: 568px) {
     .pagesview {

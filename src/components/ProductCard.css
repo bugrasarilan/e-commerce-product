@@ -12,15 +12,41 @@
     justify-content: center;
   } */
 
-.productcardinfo{
+.productcardinfo {
     width: 240px;
     display: flex;
 
 
 }
-.productcardimage{
+
+.productcardimage {
     width: 240px;
     height: 240px;
-  
 
+}
+
+.buttondelet {
+    border-radius: 20px;
+    background-color: rgb(237, 174, 174);
+    
+}
+
+.buttondelet:hover {
+    background-color: rgb(226, 109, 109);
+}
+.buttoncount{
+    border-radius: 15px;
+    background-color: rgb(181, 203, 225);
+   
+}
+.buttoncount:hover{
+    background-color:white;
+}
+.buttonadd{
+    border-radius: 20px;
+    background-color: rgb(202, 240, 148);
+}
+.buttonadd:hover{
+    border-radius: 20px;
+    background-color: rgb(229, 239, 216);
 }

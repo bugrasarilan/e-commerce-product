@@ -15,7 +15,8 @@ function Ipad() {
   return (
 
     <div  >
-      <button><Link to="/">back to page  </Link> </button>
+     <Link to="/"><button className='buttoncount' >Back to page </button></Link> 
+    
       <h1> Ipad </h1>
 
 
@@ -26,10 +27,10 @@ function Ipad() {
           {productsArray[1].title}
           {productsArray && <p>price:{(productsArray[1].price)}$</p>}
           <div className='pagebutton'>
-            <button onClick={() => cart.addOneToCart(productsArray[1].id)} >+</button>
-            <button onClick={() => cart.removeOneFromCart(productsArray[1].id)} >-</button>
-            <button onClick={() => cart.deleteFromCart(productsArray[1].id)}>Remove from cart</button>
-            <button onClick={() => cart.addOneToCart(productsArray[1].id)}>Add To Cart</button>
+            <button className='buttoncount' onClick={() => cart.addOneToCart(productsArray[1].id)} >+</button>
+            <button className='buttoncount' onClick={() => cart.removeOneFromCart(productsArray[1].id)} >-</button>
+            <button className='buttondelet' onClick={() => cart.deleteFromCart(productsArray[1].id)}>Remove from cart</button>
+            <button className='buttonadd' onClick={() => cart.addOneToCart(productsArray[1].id)}>Add To Cart</button>
           </div>
         </div>
       </div>
