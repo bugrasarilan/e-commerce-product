@@ -41,7 +41,7 @@ height: 300px;
     text-decoration: none;
 }
 .buttoncount:hover{
-    background-color:white;
+    background-color:rgb(220, 243, 248);
 }
 .buttonadd{
     border-radius: 20px;

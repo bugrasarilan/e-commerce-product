@@ -9,7 +9,7 @@ function Pay() {
   return (
     <div>
       <div>
-    <button><Link to="/">back to home page  </Link></button>  
+      <Link to="/"><button className='buttoncount' >Back to page </button></Link>
         <h1> <p>THANK YOU :) </p>  </h1>
         <h1> <p>PAYMENT SUCCSESSFUL  </p>  </h1>
       
