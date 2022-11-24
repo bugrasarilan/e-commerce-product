@@ -29,8 +29,8 @@ function Ipad() {
           <div className='pagebutton'>
             <button className='buttoncount' onClick={() => cart.addOneToCart(productsArray[1].id)} >+</button>
             <button className='buttoncount' onClick={() => cart.removeOneFromCart(productsArray[1].id)} >-</button>
-            <button className='buttondelet' onClick={() => cart.deleteFromCart(productsArray[1].id)}>Remove from cart</button>
-            <button className='buttonadd' onClick={() => cart.addOneToCart(productsArray[1].id)}>Add To Cart</button>
+            <button className='buttonadd' onClick={() => cart.addOneToCart(productsArray[1].id)}>Add</button>
+            <button className='buttondelet' onClick={() => cart.deleteFromCart(productsArray[1].id)}>Delete</button>
           </div>
         </div>
       </div>

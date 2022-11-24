@@ -30,8 +30,9 @@ function Iphone(props) {
           <div className='pagebutton'>
             <button className='buttoncount' onClick={() => cart.addOneToCart(productsArray[2].id)} >+</button>
             <button className='buttoncount' onClick={() => cart.removeOneFromCart(productsArray[2].id)} >-</button>
-            <button className='buttondelet' onClick={() => cart.deleteFromCart(productsArray[2].id)}>delete</button>
             <button className='buttonadd' onClick={() => cart.addOneToCart(productsArray[2].id)}>Add</button>
+            <button className='buttondelet' onClick={() => cart.deleteFromCart(productsArray[2].id)}>Delete</button>
+
           </div>
         </div>
       </div>

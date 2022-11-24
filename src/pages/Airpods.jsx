@@ -28,9 +28,9 @@ function Airpods() {
           {productsArray && <p>price:{(productsArray[0].price)}$</p>}
           <div className='pagebutton'>
             <button className='buttoncount'  onClick={() => cart.addOneToCart(productsArray[0].id)} >+</button>
-            <button className='buttoncount'  onClick={() => cart.removeOneFromCart(productsArray[0].id)} >-</button>
-            <button className='buttondelet'  onClick={() => cart.deleteFromCart(productsArray[0].id)}>Remove from cart</button>
-            <button className='buttonadd'  onClick={() => cart.addOneToCart(productsArray[0].id)}>Add To Cart</button>
+            <button className='buttoncount'  onClick={() => cart.removeOneFromCart(productsArray[0].id)} >-</button>            
+            <button className='buttonadd'  onClick={() => cart.addOneToCart(productsArray[0].id)}>Add </button>
+            <button className='buttondelet'  onClick={() => cart.deleteFromCart(productsArray[0].id)}>delete</button>
           </div>
         </div>
       </div>
