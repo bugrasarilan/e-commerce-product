@@ -56,9 +56,10 @@ width: 300px;
 
 @media only screen and (max-width: 568px) {
     .pagesview {
-    
+    background-color: black;
         display: flex;
         height: 205px;
+        width: 375px;
        
         }
     .productinfo {
