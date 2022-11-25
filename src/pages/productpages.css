@@ -69,14 +69,14 @@ width: 300px;
         flex-direction: column;
         justify-content: center;
         height: 205px;
-        width: 374px;
+        width: 370px;
         }
 
     .productpagesimage{  
         width: 205px;
         height: 205px;
         float: left;
-        border-radius: 10px;
+        border-radius: 20px;
 
     }
     .productcardimage{
