@@ -4,6 +4,7 @@ import { CartContext } from "../CartContext";
 import CartProduct from './CartProduct';
 import { Link } from 'react-router-dom';
 import "../components/Navbar.css"
+import basket from "../images/basket.jpg"
 
 
 function NavbarComponent() {
@@ -17,7 +18,7 @@ function NavbarComponent() {
         setClicked(!clicked);
     };
 
-    const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, 0);
+    const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, null);
 
     return (
         <>
@@ -37,13 +38,17 @@ function NavbarComponent() {
                         <li className='nav-item'> <Link to="Macbook">  <button className='button' >Macbook </button></Link> </li>
                         <li className='nav-item'>  <Link to="Iphone">  <button className='button' >Iphone  </button></Link> </li>
                         <li className='nav-item'> <Link to="Ipad">  <button className='button' >Ipad  </button></Link> </li>
-
                     </ul>
-
                 </div>
-                <button className='basket' onClick={handleShow}> {alert} {productsCount} product</button>
-            </header>
+                <div>
 
+                    <div onClick={handleShow} className='basket'> 
+              {productsCount}
+                        <img className='buttonbasketimage' onClick={handleShow} width="50" src={basket} alt="basket"></img>
+                       
+                    </div>
+                </div>
+            </header>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>Your product</Modal.Title>

@@ -50,12 +50,27 @@ text-decoration:none
 
 }
 
-  .basket {
+  .buttonbasket {
       background-color:rgb(245, 248, 68);
     display: flex;
     justify-content: flex-end;
+    border-radius: 35px;
+    height: 35px;
   }
-
+  .buttonbasketimage{
+    height: 35px;
+    cursor: pointer;
+    border-radius: 35px;
+  }
+  .buttonbasketimage:hover{
+    background-color: coral;
+  }
+  .basket{
+    background-color: darkorange;
+    border-radius: 35px;
+    cursor: pointer;
+   
+  }
 
   @media (max-width: 960px) {
     .nav-items {
