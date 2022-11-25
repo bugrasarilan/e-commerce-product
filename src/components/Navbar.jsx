@@ -64,9 +64,9 @@ function NavbarComponent() {
                             ))}
                             <h1>Total: {cart.getTotalCost().toFixed(2)}</h1>
                             <a href='Pay'>
-                                <Button variant="success">
+                                <button className="buttoncount">
                                     Buy products
-                                </Button>
+                                </button>
                             </a>
                         </>
                         :
