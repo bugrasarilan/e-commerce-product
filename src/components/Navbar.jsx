@@ -5,6 +5,9 @@ import CartProduct from './CartProduct';
 import { Link } from 'react-router-dom';
 import "../components/Navbar.css"
 import basket from "../images/basket.jpg"
+import { GrClose } from 'react-icons/gr';
+import { GiHamburgerMenu } from 'react-icons/gi';
+
 
 
 function NavbarComponent() {
@@ -25,13 +28,13 @@ function NavbarComponent() {
             <header className='navbar' >
                 <Link to="/">  <h1 className='header'>Products list</h1></Link>
                 <div className="hamburger" onClick={hamburgerMenu}>
-                    {clicked ? "" : "menu"}
+                    {clicked ? "" : <GiHamburgerMenu/>}
                 </div>
                 <div className='linkbutton' >
 
                     <ul className={clicked ? "nav-items" : "nav-items menu"}>
                         <div className="hamburger" onClick={hamburgerMenu}>
-                            <button className='buttonhamburgerclose'>  {clicked ? "close" : "menu"} </button>
+                            <button className='buttonhamburgerclose'>  {clicked ? <GrClose/> : ""} </button>
                         </div>
                         <li className="nav-item"> <Link to="/"><button className='button' >home </button></Link> </li>
                         <li className="nav-item"> <Link to="Airpods">  <button className='button' >Airpods </button></Link> </li>

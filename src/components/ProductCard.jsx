@@ -25,10 +25,10 @@ function ProductCard(props) { // props.product is the product we are selling
                         {productQuantity}
                         <button className='buttoncount' onClick={() => cart.addOneToCart(product.id)} >+</button>
                         <button className='buttoncount' onClick={() => cart.removeOneFromCart(product.id)} >-</button>
-                        <button className='buttondelet' onClick={() => cart.deleteFromCart(product.id)}>Remove from cart</button>
+                        <button className='buttondelet' onClick={() => cart.deleteFromCart(product.id)}>delete</button>
                     </div>
                     :
-                    <button className='buttonadd' onClick={() => cart.addOneToCart(product.id)}>Add To Cart</button>
+                    <button className='buttonadd' onClick={() => cart.addOneToCart(product.id)}>Add to basket</button>
                 }
             </div>
 
