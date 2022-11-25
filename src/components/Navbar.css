@@ -127,6 +127,9 @@
     margin-left: 85px;
     position: absolute;
     width: 28px;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
   
 
     }
