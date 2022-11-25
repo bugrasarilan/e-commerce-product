@@ -95,8 +95,9 @@
     margin-left: 10px;
       justify-content: flex-start;
       align-items: flex-start;
-      padding-left: 10px;
-      padding-right: 10px;
+      /* padding-left: 10px;
+      padding-right: 10px; */
+      padding: 5px 10px 0 0;
      
 
 
@@ -123,7 +124,7 @@
       border-radius: 20px;
       background-color: rgb(255, 8, 8);
       color: antiquewhite;
-    margin-left: 75px;
+    margin-left: 85px;
     position: absolute;
 
     }
