@@ -1,6 +1,7 @@
 import React from 'react'
 import { productsArray } from '../productsStore';
 import { Link } from 'react-router-dom';
+import "../pages/Success.css"
 
 import img1 from "../images/image-1.jpg"
 import img2 from "../images/image-2.jpg"
@@ -9,7 +10,7 @@ import img4 from "../images/image-4.jpg"
 function Success() {
 
   return (
-    <div className='store'>
+    <div className='Successpageview'>
       {/* ilk sayfa */}
 
       {/* 

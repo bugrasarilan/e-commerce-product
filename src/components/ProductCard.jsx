@@ -10,7 +10,7 @@ function ProductCard(props) { // props.product is the product we are selling
     console.log("productcard productQuantity", productQuantity);
     return (
         <div>
-            <div className='productCard'>
+            <div >
                 <div >
                     <a  href="Airpods">
                        <div className='productcardinfo'> {product.title} <br />
@@ -19,6 +19,7 @@ function ProductCard(props) { // props.product is the product we are selling
                         <img className='productcardimage' width="100" src={product.img} alt="imagec" />
                     </a>
                 </div>
+                <div>
                 {productQuantity > 0 ?
 
                     <div>
@@ -30,6 +31,7 @@ function ProductCard(props) { // props.product is the product we are selling
                     :
                     <button className='buttonadd' onClick={() => cart.addOneToCart(product.id)}>Add to basket</button>
                 }
+                </div>
             </div>
 
         </div>

@@ -42,7 +42,7 @@ function Airpods() {
 
 
             <h1 >other product</h1>
-            <div className='store'>
+            <div className='productCard'>
                 {productsArray.map((product, idx) => (
                     <ProductCard product={product} />
                 ))}
