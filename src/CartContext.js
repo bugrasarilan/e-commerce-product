@@ -99,8 +99,8 @@ export function CartProvider({children}) {
         getTotalCost
     }
 
-    return (
-        <CartContext.Provider value={contextValue}>
+    return (  //CartContext.Provider içerisinde tüm değerleri sardım istediğime ulaşmak için
+        <CartContext.Provider value={contextValue}> 
             {children}
         </CartContext.Provider>
     )

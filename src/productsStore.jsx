@@ -39,13 +39,8 @@ const productsArray = [
     },
 ];
 
-function getProductData(id) {
-    let productData = productsArray.find(product => product.id === id);
-
-    if (productData == undefined) {
-        console.log("Product data does not exist for ID: " + id);
-        return undefined;
-    }
+function getProductData(id) { //productsArrayın içindeki ürünlerin ıd'sini getProductData'da tutuyorum istenilen ürünle ıd'si eşleşiyorsa ürünü bulması için
+    const productData = productsArray.find(product => product.id === id);
 
     return productData;
 }

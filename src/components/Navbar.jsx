@@ -34,7 +34,7 @@ function NavbarComponent() {
 
                     <ul className={clicked ? "nav-items" : "nav-items menu"}>
                         <div className="hamburger" onClick={hamburgerMenu}>
-                            <button className='buttonhamburgerclose'>  {clicked ? <GrClose/> : ""} </button>
+                            <button className='buttonhamburgerclose'>  {clicked ?<GrClose/>  : ""} </button>
                         </div>
                         <li className="nav-item"> <Link to="/"><button className='button' >home </button></Link> </li>
                         <li className="nav-item"> <Link to="Airpods">  <button className='button' >Airpods </button></Link> </li>
