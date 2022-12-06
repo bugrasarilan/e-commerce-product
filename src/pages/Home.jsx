@@ -1,17 +1,16 @@
 import React from 'react'
 import { productsArray } from '../productsStore';
 import { Link } from 'react-router-dom';
-import "../pages/Success.css"
+import "../pages/Home.css"
 
 import img1 from "../images/image-1.jpg"
 import img2 from "../images/image-2.jpg"
 import img3 from "../images/image-3.jpg"
 import img4 from "../images/image-4.jpg"
-function Success() {
+function Home() {
 
   return (
-    <div className='Successpageview'>
-      {/* ilk sayfa */}      
+    <div className='Successpageview'>     
       <div>
         <Link className='productlink' to="AirPods">
           {(productsArray[0].title)}
@@ -44,4 +43,4 @@ function Success() {
   )
 }
 
-export default Success
+export default Home

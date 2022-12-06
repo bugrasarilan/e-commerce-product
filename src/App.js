@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComponent from './components/Navbar';
 import {Routes, Route } from "react-router-dom";
 import Pay from './pages/Pay';
-import Success from './pages/Success';
+import Home from './pages/Home';
 import Airpods from './pages/Airpods';
 import Ipad from './pages/Ipad';
 import Iphone from './pages/Iphone';
@@ -16,7 +16,7 @@ function App() {
     <CartProvider>
       <NavbarComponent />
       <Routes>
-        <Route path="/" element={<Success />} />
+        <Route path="/" element={<Home />} />
      
         <Route path="Airpods" element={<Airpods  />} />
         <Route path="Ipad" element={< Ipad/>} />

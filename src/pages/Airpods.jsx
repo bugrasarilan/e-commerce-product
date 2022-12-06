@@ -8,19 +8,12 @@ import { Link } from 'react-router-dom';
 import "./productpages.css"
 
 function Airpods() {
-    console.log(productsArray)
-
-    const product = productsArray;
     const cart = useContext(CartContext);
-    const productQuantity = cart.getProductQuantity(product.id);
     console.log("cart.items", cart.items);
     return (
         <div className='productpages'>
               <Link to="/"><button className='buttoncount' >Back to page </button></Link> 
             <h1> AirPods </h1>
-
-
-           
       <div className='pagesview'>
         <img className='productpagesimage' src={img2} alt="Macbook" />
         <div className='productinfo'>
@@ -35,21 +28,12 @@ function Airpods() {
           </div>
         </div>
       </div>
-
-       
-            
-
-
-
-
             <h1 style={{ color: 'black',display:"flex", justifyContent:'center'  }} >Other product</h1>
             <div className='productCard'>
                 {productsArray.map((product, idx) => (
                     <ProductCard product={product} />
                 ))}
             </div>
-
-
         </div >
     )
 }

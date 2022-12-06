@@ -7,8 +7,6 @@ function CartProduct(props) {
     const id = props.id;
     const quantity = props.quantity;
     const productData = getProductData(id);
-
-
     return (
         <>
             <h3>{productData.title}</h3>
@@ -20,8 +18,6 @@ function CartProduct(props) {
               {quantity}
             <button className='buttondelet' onClick={() => cart.deleteFromCart(id)}>delete</button>
          
-
-            <hr></hr>
         </>
     )
 }
