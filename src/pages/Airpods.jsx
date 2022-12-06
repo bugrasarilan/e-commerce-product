@@ -13,7 +13,7 @@ function Airpods() {
     return (
         <div className='productpages'>
               <Link to="/"><button className='buttoncount' >Back to page </button></Link> 
-            <h1> AirPods </h1>
+            <h1 style={{ display:"flex", justifyContent:'center'}} > AirPods </h1>
       <div className='pagesview'>
         <img className='productpagesimage' src={img2} alt="Macbook" />
         <div className='productinfo'>

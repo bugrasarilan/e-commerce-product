@@ -12,7 +12,7 @@ function Macbook() {
     <div className='productpages'>
 
 <Link to="/"><button className='buttoncount' >Back to page </button></Link>      
-   <h1> Macbook </h1>
+   <h1 style={{ display:"flex", justifyContent:'center'}} >Macbook </h1>
       <div className='pagesview'>
         <img className='productpagesimage' src={img1} alt="Macbook" />
         <div className='productinfo'>

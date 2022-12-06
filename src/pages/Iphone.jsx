@@ -5,7 +5,7 @@ import { CartContext } from '../CartContext';
 import { useContext } from 'react';
 import ProductCard from '../components/ProductCard';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+
 function Iphone(props) {
   // const productsCount = cart.items.reduce(( product) =>  product.quantity, 0);
   const product = productsArray;
@@ -17,7 +17,7 @@ function Iphone(props) {
   return (
     <div className='productpages'>
      <Link to="/"><button className='buttoncount' >Back to page </button></Link> 
-      <h1> Iphone </h1>
+      <h1 style={{ display:"flex", justifyContent:'center'}} >Iphone </h1>
       <div className='pagesview'>
         <img className='productpagesimage' src={img4} alt="Macbook" />
         <div className='productinfo'>
