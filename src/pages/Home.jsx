@@ -10,6 +10,8 @@ import img4 from "../images/image-4.jpg"
 function Home() {
 
   return (
+    <div className='homepage'>
+      <h1 style={{ color: 'black',display:"flex", justifyContent:'center'  }}  > Products</h1>
     <div className='Successpageview'>     
       <div>
         <Link className='productlink' to="AirPods">
@@ -38,6 +40,7 @@ function Home() {
           <img className='homeimage' width="200" height="150" src={img1} alt="Macbook" />
           {<p>price: {(productsArray[3].price)}$</p>}</Link>
       </div>
+    </div>
     </div>
 
   )
