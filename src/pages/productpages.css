@@ -1,89 +1,97 @@
+.productpages {
+  background-color: rgb(241, 246, 252);
+}
+
 .pagesview {
-background-color: rgb(202, 225, 237);
-display: flex;
-height: 375px;
-border-radius: 20px;
+  background-color: rgb(29, 40, 49);
+  display: flex;
+  height: 375px;
+  border-radius: 20px;
 }
+
 .productinfo {
-background-color: rgb(111, 173, 240);
-border-radius: 20px;
-margin: auto;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-height: 300px;
-width: 300px;
+  background-color: rgb(45, 124, 144);
+  border-radius: 20px;
+  color: white;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
 }
-.productdetail{
-    display: flex;
-    align-self: center;
-    flex-direction: column;
-    border-radius: 20px;
+.productdetail {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  border-radius: 20px;
 }
-.pagebutton{
-    display: flex;
-    height: 30px;   
+.pagebutton {
+  display: flex;
+  height: 30px;
 }
-.productpagesimage{  
-    width: 375px;
-    height: 375px;
-    float: left;
+.productpagesimage {
+  width: 375px;
+  height: 375px;
+  float: left;
 }
 .buttondelet {
-    border-radius: 20px;
-    background-color: rgb(237, 174, 174);
+  border-radius: 20px;
+  background-color: rgb(237, 174, 174);
 }
 .buttondelet:hover {
-    background-color: rgb(226, 109, 109);
+  background-color: rgb(226, 109, 109);
 }
-.buttoncount{
-    border-radius: 15px;
-    background-color: rgb(181, 203, 225);
-    text-decoration: none;
+.buttoncount {
+  border-radius: 15px;
+  background-color: rgb(181, 203, 225);
+  text-decoration: none;
 }
-.buttoncount:hover{
-    background-color:rgb(220, 243, 248);
+.buttoncount:hover {
+  background-color: rgb(220, 243, 248);
 }
-.buttonadd{
-    border-radius: 20px;
-    background-color: rgb(202, 240, 148);
+.buttonadd {
+  border-radius: 20px;
+  background-color: rgb(202, 240, 148);
 }
-.buttonadd:hover{
-    border-radius: 20px;
-    background-color: rgb(229, 239, 216);
+.buttonadd:hover {
+  border-radius: 20px;
+  background-color: rgb(229, 239, 216);
 }
 
 @media only screen and (max-width: 568px) {
-    .pagesview {
-    
-        display: flex;
-        height: 205px;
-        width: 360px;
-       
-        }
-    .productinfo {
-        background-color: rgb(111, 173, 240);
-
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 205px;
-        width: 360px;
-        }
-
-    .productpagesimage{  
-        width: 180px;
-        height: 205px;
-        float: left;
-        border-radius: 20px;
-
-    }
-    .productcardimage{
-        width: 100px;
-        height: 100px;
-    }
-    .pagesview{
-        background-color:white ;}  
+  .productpages {
+    background-color: rgb(241, 246, 252);
   }
+  .pagesview {
+    display: flex;
+    height: 205px;
+    width: 360px;
+    background-color: rgb(29, 40, 49);
+  }
+  .productinfo {
+    background-color: rgb(29, 40, 49);
+
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 205px;
+    width: 360px;
+  }
+
+  .productpagesimage {
+    width: 180px;
+    height: 205px;
+    float: left;
+    border-radius: 20px;
+  }
+  .productcardimage {
+    width: 100px;
+    height: 100px;
+  }
+  .pagesview {
+    background-color: white;
+  }
+}

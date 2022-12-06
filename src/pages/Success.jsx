@@ -11,41 +11,32 @@ function Success() {
 
   return (
     <div className='Successpageview'>
-      {/* ilk sayfa */}
-
-      {/* 
-      {productsArray.map((product, idx) => (
-        <div key={idx}>
-          <Link to="store">  {product.title}<br /> </Link>
-          ${product.price}<br />
-          <img width="100" src={product.img} alt="imagse" />
-        </div>
-      ))} */}
+      {/* ilk sayfa */}      
       <div>
-        <Link to="AirPods">
+        <Link className='productlink' to="AirPods">
           {(productsArray[0].title)}
-          <img className='homeimage' width="200" height="150" src={img2} />
+          <img className='homeimage' width="200" height="150" src={img2} alt="airpods "  />
           {<p>price:{(productsArray[0].price)}$</p>}</Link>
       </div>
 
       <div>
-        <Link to="Ipad">
+        <Link className='productlink' to="Ipad">
           {(productsArray[1].title)}
-          <img className='homeimage' width="200" height="150" src={img3} />
+          <img className='homeimage' width="200" height="150" src={img3} alt="Ipad " />
           {<p>price: {(productsArray[1].price)}$</p>}</Link>
       </div>
 
       <div>
-        <Link to="Iphone">
+        <Link className='productlink' to="Iphone">
           {(productsArray[2].title)}
-          <img className='homeimage' width="200" height="150" src={img4} />
+          <img className='homeimage' width="200" height="150" src={img4} alt="IPhone"  />
           {<p>price:{(productsArray[2].price)}$</p>}</Link>
       </div>
 
       <div>
-        <Link to="MacBook">
+        <Link className='productlink' to="MacBook">
           {(productsArray[3].title)}
-          <img className='homeimage' width="200" height="150" src={img1} />
+          <img className='homeimage' width="200" height="150" src={img1} alt="Macbook" />
           {<p>price: {(productsArray[3].price)}$</p>}</Link>
       </div>
     </div>

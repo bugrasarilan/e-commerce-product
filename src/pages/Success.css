@@ -4,13 +4,17 @@
     margin: 10px auto;
     padding-top: 10px;
     padding-right: 50px;
-    background-color: rgb(191, 231, 248);
+    background-color: rgb(29,40,49);
     border-radius: 30px;
     display: grid;
     grid-template-columns: 150px 150px;
     grid-template-rows: 150px, 150px;
     gap: 200px;
     justify-content: center;
+  }
+  .productlink{
+    text-decoration: none;
+    color: white;
   }
   
   
@@ -19,7 +23,7 @@
       width: 374px;
       margin: 5px auto;
       padding-left: 60px;
-      background-color: rgb(99, 194, 235);
+      background-color: rgb(29,40,49);
       border-radius: 12px;
       display: grid;
       grid-template-columns: 150px 150px;

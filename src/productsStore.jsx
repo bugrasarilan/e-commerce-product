@@ -9,7 +9,9 @@ const productsArray = [
         title: "Airpods Max",
         img:img2,
         price: 549.99,
+         cardinfo: "cardinfo  Lorem ipsum dolor sit amet, conexercint, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         count:1
+    
     },
     {
         id: 2,

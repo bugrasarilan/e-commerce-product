@@ -12,7 +12,7 @@ function Macbook() {
   console.log(cart.items);
 
   return (
-    <div>
+    <div className='productpages'>
 
 <Link to="/"><button className='buttoncount' >Back to page </button></Link>       <h1> Macbook </h1>
 
@@ -59,7 +59,7 @@ function Macbook() {
 
 
 
-      <h1 >other product</h1>
+      <h1 style={{ color: 'black',display:"flex", justifyContent:'center'  }} >Other product</h1>
       <div className='productCard'>
         {productsArray.map((product, idx) => (
           <ProductCard product={product} />

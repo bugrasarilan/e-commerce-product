@@ -15,7 +15,7 @@ function Airpods() {
     const productQuantity = cart.getProductQuantity(product.id);
     console.log("cart.items", cart.items);
     return (
-        <div>
+        <div className='productpages'>
               <Link to="/"><button className='buttoncount' >Back to page </button></Link> 
             <h1> AirPods </h1>
 
@@ -25,6 +25,7 @@ function Airpods() {
         <img className='productpagesimage' src={img2} alt="Macbook" />
         <div className='productinfo'>
           {productsArray[0].title}
+ 
           {productsArray && <p>price:{(productsArray[0].price)}$</p>}
           <div className='pagebutton'>
             <button className='buttoncount'  onClick={() => cart.addOneToCart(productsArray[0].id)} >+</button>
@@ -41,7 +42,7 @@ function Airpods() {
 
 
 
-            <h1 >other product</h1>
+            <h1 style={{ color: 'black',display:"flex", justifyContent:'center'  }} >Other product</h1>
             <div className='productCard'>
                 {productsArray.map((product, idx) => (
                     <ProductCard product={product} />

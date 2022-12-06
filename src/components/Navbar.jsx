@@ -1,4 +1,4 @@
-import { Button, Modal } from 'react-bootstrap';
+import {  Modal } from 'react-bootstrap';
 import { useState, useContext } from 'react';
 import { CartContext } from "../CartContext";
 import CartProduct from './CartProduct';
@@ -26,7 +26,7 @@ function NavbarComponent() {
     return (
         <>
             <header className='navbar' >
-                <Link to="/">  <h1 className='header'>Products list</h1></Link>
+                <Link className='header' to="/">  <h1 >Products list</h1></Link>
                 <div className="hamburger" onClick={hamburgerMenu}>
                     {clicked ? "" : <GiHamburgerMenu/>}
                 </div>
@@ -42,6 +42,7 @@ function NavbarComponent() {
                         <li className='nav-item'>  <Link to="Iphone">  <button className='button' >Iphone  </button></Link> </li>
                         <li className='nav-item'> <Link to="Ipad">  <button className='button' >Ipad  </button></Link> </li>
                     </ul>
+                    
                 </div>
                 <div>
 

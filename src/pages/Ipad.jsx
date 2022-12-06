@@ -14,7 +14,7 @@ function Ipad() {
   console.log(cart.items);
   return (
 
-    <div  >
+    <div className='productpages' >
      <Link to="/"><button className='buttoncount' >Back to page </button></Link> 
     
       <h1> Ipad </h1>
@@ -38,7 +38,7 @@ function Ipad() {
 
   
 
-      <h1 >other product</h1>
+      <h1 style={{ color: 'black',display:"flex", justifyContent:'center'  }} >Other product</h1>
       <div className='productCard'>
         {productsArray.map((product, idx) => (
           <ProductCard product={product} />
