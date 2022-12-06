@@ -30,7 +30,7 @@ function NavbarComponent() {
                         <div className="hamburger" onClick={hamburgerMenu}>
                             <button className='buttonhamburgerclose'>  {clicked ?<GrClose/>  : ""} </button>
                         </div>
-                        <li className="nav-item"> <Link to="/"><button className='button' >home </button></Link> </li>
+                        <li className="nav-item"> <Link to="/"><button className='button' >Home </button></Link> </li>
                         <li className="nav-item"> <Link to="Airpods">  <button className='button' >Airpods </button></Link> </li>
                         <li className='nav-item'> <Link to="Macbook">  <button className='button' >Macbook </button></Link> </li>
                         <li className='nav-item'>  <Link to="Iphone">  <button className='button' >Iphone  </button></Link> </li>
