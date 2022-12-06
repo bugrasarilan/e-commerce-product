@@ -10,7 +10,7 @@
 }
 
 .productinfo {
-  background-color: rgb(45, 124, 144);
+  background-color: rgb(42, 55, 65);
   border-radius: 20px;
   color: white;
   margin: auto;
@@ -38,14 +38,14 @@
 }
 .buttondelet {
   border-radius: 20px;
-  background-color: rgb(237, 174, 174);
+  background-color: rgb(222, 238, 238);
 }
 .buttondelet:hover {
   background-color: rgb(226, 109, 109);
 }
 .buttoncount {
   border-radius: 15px;
-  background-color: rgb(181, 203, 225);
+  background-color: rgb(123, 180, 238);
   text-decoration: none;
 }
 .buttoncount:hover {
@@ -53,7 +53,7 @@
 }
 .buttonadd {
   border-radius: 20px;
-  background-color: rgb(202, 240, 148);
+  background-color: rgb(222, 238, 238);
 }
 .buttonadd:hover {
   border-radius: 20px;
