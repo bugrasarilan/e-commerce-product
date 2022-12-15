@@ -1,76 +1,69 @@
 .productCard {
-    width: 650px;
-    margin: 10px auto;
-    padding-top: 10px;
-    padding-right: 50px;
-    background-color: rgb(29,40,49);
-    border-radius: 30px;
-    display: grid;
-    grid-template-columns: 150px 150px;
-    grid-template-rows: 150px, 150px;
-    gap: 200px;
-    justify-content: center;
-  } 
-
+  width: 650px;
+  margin: 10px auto;
+  padding-top: 10px;
+  padding-right: 50px;
+  background-color: rgb(29, 40, 49);
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 150px, 150px;
+  gap: 200px;
+  justify-content: center;
+}
 .productcardinfo {
-    width: 240px;
-    display: flex;
-    color: white;
+  width: 240px;
+  display: flex;
+  color: white;
 }
-
 .productcardimage {
-    width: 240px;
-    height: 240px;
+  width: 240px;
+  height: 240px;
 }
-.productscount{
-    color: white;
-   
+.productscount {
+  color: white;
 }
-
 .buttondelet {
-    border-radius: 20px;
-    background-color: rgb(237, 174, 174);
-    margin-left: 5px;
+  border-radius: 20px;
+  background-color: rgb(237, 174, 174);
+  margin-left: 5px;
 }
-
 .buttondelet:hover {
-    background-color: rgb(226, 109, 109);
+  background-color: rgb(226, 109, 109);
 }
-.buttoncount{
-    margin-left: 5px;
-    border-radius: 15px;
-    background-color: rgb(181, 203, 225);
-   
+.buttoncount {
+  margin-left: 5px;
+  border-radius: 15px;
+  background-color: rgb(181, 203, 225);
 }
-.buttoncount:hover{
-    background-color:white;
+.buttoncount:hover {
+  background-color: white;
 }
-.buttonadd{
-    border-radius: 20px;
-    background-color: rgb(202, 240, 148);
+.buttonadd {
+  border-radius: 20px;
+  background-color: rgb(202, 240, 148);
 }
-.buttonadd:hover{
-    border-radius: 20px;
-    background-color: rgb(229, 239, 216);
+.buttonadd:hover {
+  border-radius: 20px;
+  background-color: rgb(229, 239, 216);
 }
 
 @media only screen and (max-width: 568px) {
-    .productCard {
-      width: 374px;
-      margin: 5px auto;
-      padding-left: 60px;
-      background-color: rgb(29,40,49);
-      border-radius: 12px;
-      display: grid;
-      grid-template-columns: 150px 150px;
-      grid-template-rows: 150px, 150px;
-      gap: 60px;
-      justify-content: center;
-    }
-  
-    .homeimage {
-      width: 140px;
-      height: 120px;
-      padding-right: 30px;
-    }
+  .productCard {
+    width: 374px;
+    margin: 5px auto;
+    padding-left: 60px;
+    background-color: rgb(29, 40, 49);
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px, 150px;
+    gap: 60px;
+    justify-content: center;
   }
+  .homeimage {
+    width: 140px;
+    height: 120px;
+    padding-right: 30px;
+  }
+}
