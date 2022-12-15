@@ -92,8 +92,7 @@ function NavbarComponent() {
                 ></CartProduct>
               ))}
               <h1>
-                {" "}
-                <p> Total: ${cart.getTotalCost().toFixed(2)} </p>{" "}
+                <p> Total: ${cart.getTotalCost().toFixed(2)} </p>
               </h1>
               <a href="Pay">
                 <button className="buttoncount">Buy products</button>
